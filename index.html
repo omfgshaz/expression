@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Basic page needs -->
+        <meta charset="utf-8">
+        <title>Very Expressive</title>
+
+        <!-- Mobile viewport needs -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container content">
+            <div class="row">
+                <span id="name">Expression</span>
+            </div>
+            <div class="row">
+                <p>Enter words (in English) into the textbox and see it magically transform into emojis (if there is). Click on the emoji in the converted emoji output to cycle through emojis.</p>
+            </div>
+            <div class="row">
+                <h6>Type your words 🔤⬇️️</h6>
+            </div>
+            <div class="row">
+                <textarea id="input" class="twelve columns"></textarea>                
+            </div>
+            <div class="row">
+                <button type="button" id="convert" class="two offset-by-ten columns button-primary">Convert</button>                
+            </div>
+            <div class="row">
+                <h6>Converted emoji output 🤖⬇️️</h6>
+            </div>
+            <div class="row">
+                <span id="output" class="twelve columns"></span>                
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/emojis.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>

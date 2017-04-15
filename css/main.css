@@ -1,0 +1,70 @@
+/* Basic page needs */
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Typography */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Project name*/
+#name {
+    font-size: 64px;
+}
+
+/* Content */
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Input */
+textarea#input  {
+    height: 64px;
+    resize: none;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Button */
+#convert {
+    margin-bottom: 50px;
+}
+
+/* Output */
+#output span::selection{
+    /* Don't highlight on selection */
+    background: rgba(0, 0, 0, 0);
+}
+
+#output span{
+    cursor: default;
+    margin: 0 10px 10px 0;
+
+    /* Prevent from being selected */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#output span.emoji-enabled{
+    cursor: pointer;
+}
+
+span#output{
+    font-size: 28px;
+}
+
+/* Larger than mobile */
+@media (min-width: 550px) {
+    #intro h1 {
+        font-size: 64px;
+        text-align: left;
+    }
+}
